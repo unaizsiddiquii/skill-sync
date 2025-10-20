@@ -8,6 +8,7 @@ public class SkillSyncApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SkillSyncApplication.class, args);
+		System.out.println("SkillSync Application Started Successfully...");
 	}
 
 }
