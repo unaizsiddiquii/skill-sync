@@ -6,6 +6,10 @@ spring:
     username: root
     password: US0726unaiz@
     driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: unaiz
+      password: 12345
   jpa:
     hibernate:
       ddl-auto: update
