@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
         User user = User.builder().username(userRegisterDTO.getUsername()).email(userRegisterDTO.getEmail()).password(passwordEncoder.encode(userRegisterDTO.getPassword())).roles(Set.of(roleUser)).build();
 
         User saved = userRepository.save(user);
-        return mapToDTO(user);
+        return mapToDTO(saved);
     }
 
     @Override
